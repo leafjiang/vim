@@ -1,4 +1,13 @@
-set nocompatible              " be iMproved, required
+" Installation instructions
+" cd ~
+" git clone https://github.com/leafjiang/vim.git
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" mvim or vim
+" :BundleInstall
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -40,8 +49,6 @@ Plugin 'ervandew/supertab'
 Plugin 'bling/vim-airline'
 " Easy comment/uncommenting
 Plugin 'scrooloose/nerdcommenter'
-
-
 
 
 
