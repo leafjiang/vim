@@ -115,7 +115,8 @@ let g:pymode_lint_write = 1
 let g:pymode_lint_options_pep8 =
         \ {'max_line_length': 120,
 	\  'ignore': 'E231, E225, W391'}
-" This doesn't work: klet g:pymode_lint_options_mccabe = {'ignore': 'C901'}
+" Turn off complexity check
+let g:pymode_lint_options_mccabe = {'complexity': '-1'}
 
 " Support virtualenv
 let g:pymode_virtualenv = 1
