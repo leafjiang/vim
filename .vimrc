@@ -114,13 +114,16 @@ let g:pymode_lint_write = 1
 " whitespace around operator
 let g:pymode_lint_options_pep8 =
         \ {'max_line_length': 120,
-	\  'ignore': 'E231, E225'}
+	\  'ignore': 'E231, E225, W391'}
+" This doesn't work: klet g:pymode_lint_options_mccabe = {'ignore': 'C901'}
+
 " Support virtualenv
 let g:pymode_virtualenv = 1
 
 " Enable breakpoints plugin
-let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_bind = '<leader>b'
+" This interferes with ,bd
+"let g:pymode_breakpoint = 1
+"let g:pymode_breakpoint_bind = '<leader>b'
 
 " syntax highlighting
 let g:pymode_syntax = 1
@@ -137,6 +140,7 @@ let g:pymode_folding = 0
 
 " Change color scheme
 " Color schemes can be found here /usr/share/vim/vim73/colors
+" pablo, desert, etc.
 :colorscheme desert
 
 " Change leader key
@@ -215,4 +219,14 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 
 " pymode#folding#expr is slow
 " disable it
-let g:pymode_folding = 0
+"let g:pymode_folding = 0
+
+" Now all operations such as yy, D, and P work with the clipboard. 
+set clipboard=unnamed
+
+" Y yanks from current position to end of line (instead of default yy
+" behaviour
+:map Y y$
+
+" Highlight search matches
+set hlsearch
