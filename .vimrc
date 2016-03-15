@@ -1,4 +1,3 @@
-" Installation instructions
 " cd ~
 " git clone https://github.com/leafjiang/vim.git
 " cp ~/vim/.vimrc .
@@ -142,7 +141,8 @@ let g:pymode_folding = 0
 " Change color scheme
 " Color schemes can be found here /usr/share/vim/vim73/colors
 " pablo, desert, etc.
-:colorscheme desert
+":colorscheme desert
+:colorscheme default
 
 " Change leader key
 let mapleader=","
@@ -231,3 +231,35 @@ set clipboard=unnamed
 
 " Highlight search matches
 set hlsearch
+
+" Turn on syntax highlighting
+syntax on
+
+" Yank to clipboard automatically
+" Otherwise, +y to yank to the + register
+set clipboard=unnamed
+
+" Turn off line numbering to make it easier to cut and paste into ipython
+" To turn it on again: set number
+set nonumber
+
+" In insert mode, backspace doesn't work.  Need to set backspace option
+set backspace=indent,eol,start
+
+" Syntax code folding doesn't seem to work, use indent instead
+" set foldmethod=indent
+
+" 4 space characters for each indent
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+" iterm2 mouse functionality
+set mouse=a
+set clipboard=unnamed
+
+" Clear highlighting on escape in normal mode
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
+
+" Toggle between showing and hiding line numbers
+:nmap <C-N><C-N> :set invnumber<CR>
+
