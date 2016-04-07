@@ -51,7 +51,8 @@ Plugin 'ervandew/supertab'
 Plugin 'bling/vim-airline'
 " Easy comment/uncommenting
 Plugin 'scrooloose/nerdcommenter'
-
+" Scala highlighting
+Plugin 'derekwyatt/vim-scala'
 
 
 " All of your Plugins must be added before the following line
