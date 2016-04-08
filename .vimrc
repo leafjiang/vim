@@ -53,7 +53,8 @@ Plugin 'bling/vim-airline'
 Plugin 'scrooloose/nerdcommenter'
 " Scala highlighting
 Plugin 'derekwyatt/vim-scala'
-
+"T-H-E colorscheme
+Plugin 'altercation/vim-colors-solarized' 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -135,15 +136,19 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 " Don't autofold code
 let g:pymode_folding = 0
 
-
-
-
+" Scala syntax checker
+let g:syntastic_ignore_files = ['\m\c\.h$', '\m\.sbt$']
+let g:syntastic_scala_checkers = ['fsc']
 
 " Change color scheme
 " Color schemes can be found here /usr/share/vim/vim73/colors
 " pablo, desert, etc.
 ":colorscheme desert
-:colorscheme default
+syntax enable
+let g:solarized_termtrans = 1
+let g:solarized_termcolors = 256
+colorscheme solarized
+set background=dark
 
 " Change leader key
 let mapleader=","
@@ -169,7 +174,7 @@ map L :bn<cr>
 
 " Enable syntax-based code folding
 " :setlocal foldmethod=syntax
-autocmd FileType c setlocal foldmethod=syntax
+"autocmd FileType c setlocal foldmethod=syntax
 
 " Word wrap without line breaks
 " :set wrap linebreak nolist
@@ -234,7 +239,7 @@ set clipboard=unnamed
 set hlsearch
 
 " Turn on syntax highlighting
-syntax on
+"syntax on
 
 " Yank to clipboard automatically
 " Otherwise, +y to yank to the + register
