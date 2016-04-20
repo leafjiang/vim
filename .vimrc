@@ -149,6 +149,7 @@ let g:syntastic_scala_checkers = ['fsc']
 syntax enable
 let g:solarized_termtrans = 1
 let g:solarized_termcolors = 256
+set t_Co=256 " for ubuntu
 colorscheme solarized
 set background=dark
 
