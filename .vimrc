@@ -55,6 +55,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'derekwyatt/vim-scala'
 "T-H-E colorscheme
 Plugin 'altercation/vim-colors-solarized' 
+" taglist
+Plugin 'vim-scripts/taglist.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -268,4 +270,9 @@ nnoremap <esc>^[ <esc>^[
 
 " Toggle between showing and hiding line numbers
 :nmap <C-N><C-N> :set invnumber<CR>
+
+" taglist depends on the Vim filetype detection mechanism
+filetype on
+nnoremap <leader>t :TlistUpdate<CR>:TlistToggle<CR>
+
 
