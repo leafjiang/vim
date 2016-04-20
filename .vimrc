@@ -276,4 +276,6 @@ nnoremap <esc>^[ <esc>^[
 filetype on
 nnoremap <leader>t :TlistUpdate<CR>:TlistToggle<CR>
 
+" Markdown syntax highlighting
+autocmd BufRead,BufNew *.md set filetype=markdown
 
