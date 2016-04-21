@@ -274,5 +274,5 @@ nnoremap <esc>^[ <esc>^[
 " taglist depends on the Vim filetype detection mechanism
 filetype on
 nnoremap <leader>t :TlistUpdate<CR>:TlistToggle<CR>
-
+let Tlist_Use_Right_Window = 1
 
