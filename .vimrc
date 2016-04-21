@@ -149,6 +149,7 @@ let g:syntastic_scala_checkers = ['fsc']
 syntax enable
 let g:solarized_termtrans = 1
 let g:solarized_termcolors = 256
+set t_Co=256 " for ubuntu
 colorscheme solarized
 set background=dark
 
@@ -275,4 +276,7 @@ nnoremap <esc>^[ <esc>^[
 filetype on
 nnoremap <leader>t :TlistUpdate<CR>:TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
+
+" Markdown syntax highlighting
+autocmd BufRead,BufNew *.md set filetype=markdown
 
