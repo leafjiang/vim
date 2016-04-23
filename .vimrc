@@ -232,7 +232,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 "let g:pymode_folding = 0
 
 " Now all operations such as yy, D, and P work with the clipboard. 
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Y yanks from current position to end of line (instead of default yy
 " behaviour
@@ -243,10 +243,6 @@ set hlsearch
 
 " Turn on syntax highlighting
 "syntax on
-
-" Yank to clipboard automatically
-" Otherwise, +y to yank to the + register
-set clipboard=unnamed
 
 " Turn off line numbering to make it easier to cut and paste into ipython
 " To turn it on again: set number
