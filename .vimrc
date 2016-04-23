@@ -259,7 +259,6 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " iterm2 mouse functionality
 set mouse=a
-set clipboard=unnamed
 
 " Clear highlighting on escape in normal mode
 nnoremap <esc> :noh<return><esc>
