@@ -283,3 +283,5 @@ let Tlist_Use_Right_Window = 1
 " Markdown syntax highlighting
 "autocmd BufRead,BufNew *.md set filetype=markdown
 
+" Disable folding for markdown
+let g:vim_markdown_folding_disabled = 1
