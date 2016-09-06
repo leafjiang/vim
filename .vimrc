@@ -57,6 +57,9 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'altercation/vim-colors-solarized' 
 " taglist
 Plugin 'vim-scripts/taglist.vim'
+" markdown highlighting
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -232,7 +235,7 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 "let g:pymode_folding = 0
 
 " Now all operations such as yy, D, and P work with the clipboard. 
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " Y yanks from current position to end of line (instead of default yy
 " behaviour
@@ -243,6 +246,10 @@ set hlsearch
 
 " Turn on syntax highlighting
 "syntax on
+
+" Yank to clipboard automatically
+" Otherwise, +y to yank to the + register
+set clipboard=unnamed
 
 " Turn off line numbering to make it easier to cut and paste into ipython
 " To turn it on again: set number
@@ -259,6 +266,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 " iterm2 mouse functionality
 set mouse=a
+set clipboard=unnamed
 
 " Clear highlighting on escape in normal mode
 nnoremap <esc> :noh<return><esc>
@@ -273,5 +281,5 @@ nnoremap <leader>t :TlistUpdate<CR>:TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 
 " Markdown syntax highlighting
-autocmd BufRead,BufNew *.md set filetype=markdown
+"autocmd BufRead,BufNew *.md set filetype=markdown
 
