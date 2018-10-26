@@ -1,5 +1,11 @@
 # Leaf's vim configuration
 
+## Ubuntu 18.04 pre-installation instructions
+```
+sudo apt install vim-gtk3
+sudo apt install ctags
+```
+
 ## Installation instructions
 ```bash
 cd ~
