@@ -1,9 +1,9 @@
 # Leaf's vim configuration
 
 ## Ubuntu 18.04 pre-installation instructions
-```
-sudo apt install vim-gtk3
-sudo apt install ctags
+```bash
+# Install vim with cut-and-paste support 
+sudo apt install vim-gtk
 ```
 
 ## Installation instructions
@@ -11,9 +11,10 @@ sudo apt install ctags
 cd ~
 git clone https://github.com/leafjiang/vim.git
 cp ~/vim/.vimrc .
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-mvim or vim
-:BundleInstall
+
+# or
+
+cd ~
+wget https://raw.githubusercontent.com/leafjiang/vim/master/.vimrc 
 ```
-To update .vimrc on github, you need to change the .vimrc in ~/vim
 
