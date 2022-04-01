@@ -21,4 +21,7 @@ set foldmethod=syntax
 "set foldmethod=indent
 
 " Fix cut and paste between applications
+"   For Google Cloud Platform
 set clipboard=unnamedplus
+"   For Mac OS
+set clipboard=unnamed
