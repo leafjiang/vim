@@ -15,7 +15,10 @@ set expandtab
 set paste
 
 " Fold by syntax with zr and zm commands
+" For C++
 set foldmethod=syntax
+" For Python
+"set foldmethod=indent
 
 " Fix cut and paste between applications
 set clipboard=unnamedplus
